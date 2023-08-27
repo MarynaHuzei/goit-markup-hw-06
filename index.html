@@ -16,6 +16,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
     <header class="page-header">
@@ -50,6 +51,16 @@
             </li>
           </ul>
         </address>
+        <button
+          class="mobile-menu js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="mobile-menu-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-charm_menu-hamburger"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -61,8 +72,9 @@
           </button>
         </div>
       </section>
+      <!-- benefits -->
       <section class="benefits">
-        <div class="container">
+        <div class="container benefits-container">
           <h2 class="our-benefits visually-hidden">Our benefits</h2>
           <ul class="benefits-list list">
             <li class="benefits-list-item">
@@ -157,6 +169,7 @@
             <li class="team-member">
               <img
                 class="worker-img"
+                srcset="./images/our_team/img-3@2x.jpg 2x"
                 src="./images/our_team/img-3.jpg"
                 alt="man"
                 width="264"
@@ -200,6 +213,7 @@
             <li class="team-member">
               <img
                 class="worker-img"
+                srcset="./images/our_team/img-2@2x.jpg 2x"
                 src="./images/our_team/img-2.jpg"
                 alt="man"
                 width="264"
@@ -243,6 +257,7 @@
             <li class="team-member">
               <img
                 class="worker-img"
+                srcset="./images/our_team/img-1@2x.jpg 2x"
                 src="./images/our_team/img-1.jpg"
                 alt="woman"
                 width="264"
@@ -286,6 +301,7 @@
             <li class="team-member">
               <img
                 class="worker-img"
+                srcset="./images/our_team/img@2x.jpg 2x"
                 src="./images/our_team/img.jpg"
                 alt="man"
                 width="264"
@@ -423,6 +439,7 @@
             </li>
           </ul>
         </div>
+
         <div class="input-footer">
           <p class="subscribe-footer">Subscribe</p>
           <form class="footer-form">
@@ -542,6 +559,91 @@
         </form>
       </div>
     </div>
+    <!-- menu burger -->
     <script src="./js/modal.js"></script>
+    <div class="mobile-menu-burger js-menu-container" id="mobile-menu">
+      <div class="container mobile-menu-container">
+        <button class="menu-burger-close-btn js-close-menu" type="button">
+          <svg
+            class="burger-close-btn-icon"
+            width="8"
+            height="8"
+            aria-label="modal window close icon"
+          >
+            <use href="./images/icons.svg#icon-close-btn"></use>
+          </svg>
+        </button>
+        <nav class="mobile-menu-nav">
+          <ul class="mobile-menu-list list">
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link link" href="./index.html">Studio</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link link" href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link link" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="burger-tel-mail">
+          <ul class="burger-list-address list">
+            <li class="burger-list-address-item">
+              <a
+                class="burger-list-address-link link"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com
+              </a>
+            </li>
+            <li class="burger-list-address-item">
+              <a class="burger-list-address-link link" href="tel:+110001111111"
+                >+11 (000) 111-11-11
+              </a>
+            </li>
+          </ul>
+        </address>
+        <div class="mobile-socials">
+          <ul class="mobile-social-list list">
+            <li class="mobile-list">
+              <a class="mobile-social-list-link link" href="">
+                <svg class="mobile-social-list-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-list">
+              <a class="mobile-social-list-link link" href="">
+                <svg class="mobile-social-list-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-list">
+              <a class="mobile-social-list-link link" href="">
+                <svg class="mobile-social-list-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-list">
+              <a class="mobile-social-list-link link" href="">
+                <svg class="mobile-social-list-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
